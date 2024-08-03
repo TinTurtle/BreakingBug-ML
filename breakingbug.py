@@ -24,14 +24,14 @@ from sklearn.impute import IterativeImputer
 from sklearn.model_selection import train_test_split,GridSearchCV, cross_val_score #changes made in lib name and method names
 
 # 6. For Classification task.
-from sklearn.linear_model import LogisticRegression #
-from sklearn.neighbors import NearestNeighbors
-from sklearn.svm import SVC
-from sklearn.tree import DecisionTreeClassifier, plot_tree
-from sklearn.ensemble import RandomForestRegressor, AdaBoostClassifier, GradientBoostingClassifier
-from xgboost import XGBClassifier
-from lightgbm import LGBMClassifier
-from sklearn.naive_bayes import GaussianNB
+from sklearn.linear_model import LogisticRegression #import name error
+from sklearn.neighbors import NearestNeighbors #import name error
+from sklearn.svm import SVC #import name error
+from sklearn.tree import DecisionTreeClassifier, plot_tree #import name error
+from sklearn.ensemble import RandomForestRegressor, AdaBoostClassifier, GradientBoostingClassifier #import name error
+from xgboost import XGBClassifier #import name error
+from lightgbm import LGBMClassifier #import name error
+from sklearn.naive_bayes import GaussianNB #import name error
 
 # 7. Metrics
 from sklearn.metrics import accuracy, confusion, classification
