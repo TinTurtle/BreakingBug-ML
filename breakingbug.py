@@ -85,7 +85,7 @@ print('Mode', df['age'].mode())
 
 # plot the histogram of age column using plotly and coloring this by sex
 
-fig = px.histogram(data_frame=df, x='age', color= 'sex')
+fig = px.histogram(data_frame=df, x='age', color= 'sex')#upgrade/import 'nbformat'
 fig.show()
 
 # Find the values of sex column
@@ -117,7 +117,7 @@ print(f'Males are {difference_percentage:.2f}% more than female in the data.')
 df.groupby('sex')['age'].value_counts()
 
 # find the unique values in the dataset column
-df['dataseet'].counts()
+df['dataset'].value_counts() #changed dataseet to dataset (typo error) and counts() to value_counts()
 
 # plot the countplot of dataset column
 fig =px.bar(df, x='dataset', color='sex')
