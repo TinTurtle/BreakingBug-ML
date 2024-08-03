@@ -34,7 +34,7 @@ from lightgbm import LGBMClassifier #import name error
 from sklearn.naive_bayes import GaussianNB #import name error
 
 # 7. Metrics
-from sklearn.metrics import accuracy, confusion, classification
+from sklearn.metrics import accuracy_score, confusion_matrix, classification_report#import error name
 
 # 8. Ignore warnings
 import warnings
