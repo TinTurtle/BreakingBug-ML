@@ -185,15 +185,12 @@ df.info()
 imputer2 = IterativeImputer(max_iter=10, random_state=42)
 
 # fit transform on ca,oldpeak, thal,chol and thalch columns
-df['ca'] = imputer_transform(ca)
-df['oldpeak']= imputer_transform(oldpeak)
-df['chol'] = imputer_transform(chol)
-df['thalch'] = imputer_transform(thalch)
+df[['ca', 'oldpeak', 'chol', 'thalch']] = imputer2.fit_transform(df[['ca', 'oldpeak', 'chol', 'thalch']]) #changed the syntax and clubbed all the columns in one line
 
 
 
 # let's check again for missing values
-(df.isnull().sum()/ len(df)* 100).sort_values(ascending=False)
+(df.isnull().sum()/ len(df)* 100).sort_values(ascending=False
 
 print(f"The missing values in thal column are: {df['thal'].isnull().sum()}")
 
