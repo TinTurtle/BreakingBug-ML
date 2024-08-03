@@ -21,7 +21,7 @@ from sklearn.experimental import enable_iterative_imputer
 from sklearn.impute import IterativeImputer
 
 # 5. Machine Learning
-from sklearn.model import train_test_split,GridSearch, cross_val
+from sklearn.model_selection import train_test_split,GridSearchCV, cross_val_score #changes made in lib name and method names
 
 # 6. For Classification task.
 from sklearn import LogisticRegressions
