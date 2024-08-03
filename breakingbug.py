@@ -133,11 +133,11 @@ fig.show()
 
 # print the mean median and mode of age column grouped by dataset column
 print("___________________________________________________________")
-print ("Mean of the dataset: ",df('data')['age'].mean())
+print("Mean of the dataset: ", df['age'].mean()) #syntax error
 print("___________________________________________________________")
-print ("Median of the dataset: ",df('data')['age'].median())
+print("Median of the dataset: ", df['age'].median())#syntax error
 print("___________________________________________________________")
-print ("Mode of the dataset: ",df('data')['age'].(pd.Series.mode))
+print("Mode of the dataset: ", df['age'].mode()[0])  # Mode returns a Series, so we take the first element and syntax error
 print("___________________________________________________________")
 
 # value count of cp column
